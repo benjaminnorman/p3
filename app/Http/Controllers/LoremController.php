@@ -29,6 +29,7 @@ class LoremController extends Controller {
         //use php implode() function to format text
         $paragraphsImploded = implode('<p>', $paragraphs);
 
-        return $paragraphsImploded;
+        return 1;
+//        return $paragraphsImploded;
     }
 }
