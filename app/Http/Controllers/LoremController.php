@@ -23,8 +23,6 @@ class LoremController extends Controller {
         //generate the paragraphs using the generator
         $paragraphs = $generator->getParagraphs($_POST['numParagraphs']);
 
-
-
         return view('loremipsum.show')->with('paragraphs', $paragraphs);
     }
 }

@@ -16,9 +16,11 @@ Route::get('/', function () {
 });
 
 //Lorem Ipsum Generator Routes
+/*
 Route::get('/loremipsum', function(){
     return 'Welcome to the Lorem Ipsum Generator';
 });
+*/
 
 Route::get('/loremipsum/create', 'LoremController@getCreate');
 Route::post('/loremipsum/create', 'LoremController@postCreate');
