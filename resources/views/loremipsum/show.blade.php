@@ -23,6 +23,9 @@
     </div>
 </header>
 
+
+<div>Hello buttface</div>
+<!--
 <section align="center">
     @foreach ($paragraphs as $paragraph)
         <br>
@@ -31,6 +34,7 @@
                 </h5>
     @endforeach
 </section>
+-->
 
 <footer>
     &copy; {{ 'Benjamin Norman' }}

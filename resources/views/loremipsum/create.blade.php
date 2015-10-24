@@ -22,7 +22,7 @@
     </header>
 </div>
 
-<!--
+
 <div class="form-group" align="center">
     <form method='POST' action=''>
         <br><br>
@@ -32,7 +32,7 @@
         </label>
     </form>
 </div>
--->
+
 <footer>
     &copy; {{ 'Benjamin Norman' }}
 </footer>
