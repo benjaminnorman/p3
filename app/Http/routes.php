@@ -16,12 +16,13 @@ Route::get('/', function () {
 });
 
 //Lorem Ipsum Generator Routes
-Route::get('/randomtext', function(){
+Route::get('/loremipsum', function(){
     return 'Welcome to the Lorem Ipsum Generator';
 });
-Route::get('/randomtext/create', 'LoremController@getCreate');
-Route::post('/randomtext/create', 'LoremController@postCreate');
+
+Route::get('/loremipsum/create', 'LoremController@getCreate');
+Route::post('/loremipsum/create', 'LoremController@postCreate');
 
 //Random User Generator
-Route::get('/randomuser/create', 'FakeUserController@getCreate');
-Route::post('/randomuser/create', 'FakeUserController@postCreate');
+Route::get('/fakeuser/create', 'FakeUserController@getCreate');
+Route::post('/fakeuser/create', 'FakeUserController@postCreate');

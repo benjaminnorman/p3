@@ -15,35 +15,31 @@ class FakeUserController extends Controller {
     }
 
     public function getCreate(){
-        echo 'Enter the number of users you would like: ';
-        $view = '<form method="POST" action="/randomuser/create">';
-        $view .= csrf_field();
-        $view .= '<input type="text" name="numUsers">';
-        $view .= '<input type="submit">';
-        $view .= '<form>';
-
-        return $view;
+        return view('fakeuser.create');
     }
 
     public function postCreate(){
-        $this->generateFakeUser($_POST['numUsers']);
-    }
+        if(($_POST['numUsers'] < 1) || ($_POST['numUsers'] > 100)){
+            return view('errors.inputCheck');
+        }
 
-    public function generateFakeUser($numUsers){
-        for($i=1; $i<=$numUsers; $i++){
-            //instantiate new random user generator
+        $usersArray = [];
+
+        for($i=1; $i<=$_POST['numUsers']; $i++) {
+            //generate fake credentials for a user
             $faker = \Faker\Factory::create();
-
-            //get random user info
             $name = $faker->name;
             $address = $faker->address;
 
-            echo 'NEW USER: ';
-            echo '<br>';
-            echo 'Name: '.$name;
-            echo '<br>';
-            echo 'Address: '.$address;
-            echo '<br><br>';
+            //create a new user using the generated credentials
+            $user = array(
+                'name' => $name,
+                'address' => $address
+                );
+            //add the new user to the array of all users
+            $usersArray[$i] = $user;
         }
+
+        return view('fakeuser.show')->with('usersArray', $usersArray);
     }
 }
