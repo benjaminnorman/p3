@@ -7,7 +7,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 
-        <title>Laravel</title>
+        <title>Developers Best Friend</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 

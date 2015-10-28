@@ -1,27 +1,33 @@
-## Laravel PHP Framework
+#Project 1
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+###Overview
+The purpose of Project 3 is to create a tool for developers to use to make their work easier. The two tools that are integrated into the site are a Lorem Ipsum generator, and a random user generator.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+The Lorem Ipsum generator takes an integer between 1 and 100 as input, and generates that number of paragraphs filled with random Lorem Ipsum text. This may be quite useful to someone trying to fill space on an empty blog for design purposes, for example.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+The random user generator creates fictitious details about an imaginary user for the purposes of filling forms, creating sample documents, or other similar tasks. This generator takes an integer between 1 and 100 as input, and creates that number of users and displays them on screen.
 
-## Official Documentation
+If a user enters some input besides an integer in the allowed range, they are sent to an error page instructing them to return to the form and enter an input within the parameters.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
+###Live URL
+The live Project one can be found here:
+[Live Project 3](http://p3.benorman.com)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+The video presentation for this project can be found here:
+[Project 3 Video](https:)
 
-## Security Vulnerabilities
+###Instructions
+Simply access the main page via the URL above, then select the tool you would like to use from the list of links.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+###Other Details
+On the back end, this website utilizes the routing capabilities of Laravel to transport users to the correct pages when they access certain URL's or submit forms.
+There are 'create' views and 'show' views that take form input, and display the processed output, respectively.
 
-### License
+The input data is passed from the 'create' view to the controller, where some logic creates the desired output. This output is then passed to the 'show' view for display.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The 'show' views use a small amount of the blade language combined with a simple foreach statement to iterate over the data that is passed to it.
+
+###Plugins and Libraries
+The controllers implement external packages in order to obtain the user data and lorem ipsum text. These packages are managed by Composer, and are both quite simple to implement.
+Simply, the controller instantiates an instance of the package's class, then uses the methods associated with that class to generate the data.
