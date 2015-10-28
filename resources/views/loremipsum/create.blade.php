@@ -26,7 +26,7 @@
 <div class="form-group" align="center">
     <form method='POST' action=''>
         <br><br>
-        <div class="alert alert-info"><h3>Enter Number of Users: </h3></div>
+        <div class="alert alert-info"><h3>Enter Number of Paragraphs: </h3></div>
         <label>Number of Paragraphs  <b>(Min 1, Max 100)</b>: <br>
             <input type="text" name="numParagraphs" class="form-control">
         </label>
