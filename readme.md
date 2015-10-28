@@ -15,7 +15,7 @@ The live Project one can be found here:
 [Live Project 3](http://p3.benorman.com)
 
 The video presentation for this project can be found here:
-[Project 3 Video](https:)
+[Project 3 Video](http://youtu.be/7YNMWb1X-fM)
 
 ###Instructions
 Simply access the main page via the URL above, then select the tool you would like to use from the list of links.
