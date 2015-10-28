@@ -1,4 +1,4 @@
-#Project 1
+#Project 3
 
 ###Overview
 The purpose of Project 3 is to create a tool for developers to use to make their work easier. The two tools that are integrated into the site are a Lorem Ipsum generator, and a random user generator.
